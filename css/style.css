@@ -337,12 +337,12 @@ footer { padding: 2rem 1.5rem; background: var(--ink); color: var(--bg); text-al
 /* Stack the phone views on narrow screens so each stays readable. */
 @media (max-width: 560px) {
   .build-loop {
-    grid-template-columns: minmax(0, 280px);
-    max-width: 280px;
+    grid-template-columns: minmax(0, 240px);
+    max-width: 240px;
     gap: 0.35rem;
   }
-  .chat-panel, .app-panel { min-height: 340px; padding: 0.65rem; }
-  .case-stack, .app-stack { height: 220px; }
+  .chat-panel, .app-panel { min-height: 300px; padding: 0.5rem; }
+  .case-stack, .app-stack { height: 180px; }
   .flow-divider { min-height: 32px; }
   .flow-divider::before {
     inset: auto 25% 50%;
