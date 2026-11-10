@@ -333,3 +333,20 @@ footer { padding: 2rem 1.5rem; background: var(--ink); color: var(--bg); text-al
   .gallery-arrow.previous { left: -2.25rem; }
   .gallery-arrow.next { right: -2.25rem; }
 }
+
+/* Stack the phone views on narrow screens so each stays readable. */
+@media (max-width: 560px) {
+  .build-loop {
+    grid-template-columns: minmax(0, 320px);
+    max-width: 320px;
+    gap: 0.35rem;
+  }
+  .flow-divider { min-height: 32px; }
+  .flow-divider::before {
+    inset: auto 25% 50%;
+    width: auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--blue), transparent);
+  }
+  .flow-divider span { transform: rotate(90deg); }
+}
