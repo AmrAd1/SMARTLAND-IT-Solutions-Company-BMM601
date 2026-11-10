@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سمارت لاند | برمجيات وحلول تقنية مدعومة بالذكاء الاصطناعي</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+  <!-- Floating header: logo | links | button. Right-to-left, so the logo is on the right. -->
+  <header class="topbar">
+    <a class="logo" href="#top"><img src="assets/images/logo.svg" alt="سمارت لاند"></a>
+    <nav>
+      <a href="#services">الخدمات</a>
+      <a href="#products">المشاريع</a>
+      <a href="#about">من نحن</a>
+    </nav>
+    <a class="btn" href="#contact">تواصل معنا</a>
+  </header>
+
+  <main id="top">
+
+    <!-- Main message and a looping example of a client request becoming a product. -->
+    <section class="hero container">
+      <div>
+        <p class="kicker">منذ 2024</p>
+        <h1>
+          <span>تفكير ذكي.</span>
+          <span class="blue">أساس متين.</span>
+        </h1>
+        <p class="sub">تبني سمارت لاند برمجيات مدعومة بالذكاء الاصطناعي والمنصات التي تعمل عليها.</p>
+        <div class="actions">
+          <a class="btn" href="#products">شاهد أعمالنا</a>
+          <a class="btn ghost" href="#contact">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="build-loop" aria-label="مثال على تحويل طلب العميل إلى منصة">
+        <section class="chat-panel">
+          <div class="panel-heading"><span class="before-label">قبل</span> محادثة مع العميل</div>
+          <div class="case-stack">
+            <div class="case-scene chat-scene case-one">
+              <p class="bubble client-message">أحتاج منصة سهلة لإدارة مواعيد المرضى وملفاتهم.</p>
+              <p class="bubble team-message">سننظم المواعيد والسجلات في مكان واحد.</p>
+            </div>
+          </div>
+        </section>
+        <div class="flow-divider" aria-hidden="true"><span>→</span></div>
+        <section class="app-panel">
+          <div class="panel-heading"><span class="after-label">بعد</span> النتيجة على المنصة</div>
+          <div class="case-stack app-stack">
+            <div class="case-scene app-scene case-one">
+              <div class="app-title">إدارة العيادة <i></i></div>
+              <div class="app-stats">
+                <div><small>مواعيد اليوم</small><strong>24</strong></div>
+                <div><small>المرضى</small><strong>128</strong></div>
+              </div>
+              <div class="app-row"><span>أحمد محمد</span><span>09:30</span><em>مؤكد</em></div>
+              <div class="app-row"><span>سارة علي</span><span>10:15</span><em>مؤكد</em></div>
+              <div class="app-row"><span>عمر خالد</span><span>11:00</span><em>جديد</em></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Services gallery: each fixed-ratio photo replaces the last as you swipe. -->
+    <section class="container gallery-section" aria-label="خدماتنا">
+      <h2>خدماتنا</h2>
+      <div class="gallery" data-gallery>
+        <button class="gallery-arrow previous" type="button" aria-label="الصورة السابقة">←</button>
+        <div class="gallery-window">
+          <div class="gallery-track">
+            <figure class="gallery-slide is-active"><img src="assets/images/services/21.webp" alt="خدمات البرمجة وتطوير البرمجيات" loading="lazy"></figure>
+            <figure class="gallery-slide"><img src="assets/images/services/sdfsa.webp" alt="حلول ذكية للتحول الرقمي" loading="lazy"></figure>
+            <figure class="gallery-slide"><img src="assets/images/services/sdf.webp" alt="الدعم والشراكة المستمرة" loading="lazy"></figure>
+            <figure class="gallery-slide"><img src="assets/images/services/Smart%20Land_%20حلول%20تقنية%20ذكية%20ومستقبلية.webp" alt="سمارت لاند للحلول التقنية والبرمجية" loading="lazy"></figure>
+            <figure class="gallery-slide"><img src="assets/images/services/Smart%20Land_%20حلولتقنية%20ذكية%20ومستقبلية.webp" alt="حلول تقنية متكاملة" loading="lazy"></figure>
+          </div>
+        </div>
+        <button class="gallery-arrow next" type="button" aria-label="الصورة التالية">→</button>
+      </div>
+      <p class="gallery-count" aria-live="polite">1 / 5</p>
+    </section>
+
+    <!-- Moving strip of what we do (main.js duplicates the items so the loop has no gap) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>حلول الذكاء الاصطناعي</span>
+        <span>منصات الويب</span>
+        <span>تطبيقات الجوال</span>
+        <span>أنظمة المشافي</span>
+        <span>التعلم عن بعد</span>
+        <span>التسوق الإلكتروني</span>
+        <span>برمجيات ذكية  </span>
+        <span>دعم تقني  24/7 </span>
+      </div>
+    </div>
+
+    <!-- Services: three layers, from light "smart" at the top to solid "land" at the bottom -->
+    <section id="services" class="strata">
+      <div class="container"><h2>ماذا نقدم</h2></div>
+      <div class="layer l1">
+        <div class="container inner">
+          <h3>حلول الذكاء الاصطناعي</h3>
+          <p>برمجيات مخصصة تستخدم الذكاء الاصطناعي حيث يفيد فعلاً، كالترجمة والبحث والتوصيات.</p>
+        </div>
+      </div>
+      <div class="layer l2">
+        <div class="container inner">
+          <h3>البرامج الحاسوبية و منصات الويب</h3>
+          <p>منصات قابلة للتوسع للإعلانات والتعلم والتسوق، مبنية لتبقى موثوقة مع نموها بالإضافة الى التطبيقات المرنة.</p>
+        </div>
+      </div>
+      <div class="layer l3">
+        <div class="container inner">
+          <h3>تطبيقات الجوال</h3>
+          <p>تطبيقات للاستخدام اليومي تناسب الجميع بمختلف قدراتهم.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project list: selecting a row opens that project's fullscreen video. -->
+    <section id="products" class="container">
+      <h2>مشاريعنا</h2>
+      <p class="note">مرّر فوق أي مشروع لرؤيته، وانقر لتجربته.</p>
+      <ol class="index">
+        <li>
+          <button class="item" data-open="d-signal">
+            <span class="num">01</span>
+            <span class="text"><strong>سمارت سيغنال </strong><small>تترجم لغة الإشارة إلى نص وصوت.</small></span>
+            <span class="arrow">←</span>
+            <img class="project-logo" src="assets/images/smartsignal.webp" alt="تطبيق Smart Signal يترجم لغة الإشارة" loading="lazy">
+          </button>
+        </li>
+        <li>
+          <button class="item" data-open="d-mykey">
+            <span class="num">02</span>
+            <span class="text"><strong>ماي كي</strong><small>عقارات ومركبات للبيع والإيجار.</small></span>
+            <span class="arrow">←</span>
+            <img class="project-logo" src="assets/images/mykey.webp" alt="منصة MyKey للعقارات والمركبات" loading="lazy">
+          </button>
+        </li>
+        <li>
+          <button class="item" data-open="d-sada">
+            <span class="num">03</span>
+            <span class="text"><strong>صدى</strong><small>منصة للتعلم من أي مكان.</small></span>
+            <span class="arrow">←</span>
+            <img class="project-logo" src="assets/images/sada.webp" alt="منصة Sada للتعلم عن بعد" loading="lazy">
+          </button>
+        </li>
+        <li>
+          <button class="item" data-open="d-welcome">
+            <span class="num">04</span>
+            <span class="text"><strong>ويلكم</strong><small>تسوّق من متاجر متعددة في تطبيق واحد.</small></span>
+            <span class="arrow">←</span>
+            <img class="project-logo" src="assets/images/welcome.webp" alt="تطبيق Welcome للتسوق من متاجر متعددة" loading="lazy">
+          </button>
+        </li>
+        <li>
+          <button class="item" data-open="d-hospital">
+            <span class="num">05</span>
+            <span class="text"><strong>شفاء</strong><small>السجلات والمواعيد والكوادر في نظام واحد.</small></span>
+            <span class="arrow">←</span>
+            <img class="project-logo" src="assets/images/shifaa.webp" alt="نظام إدارة المشافي" loading="lazy">
+          </button>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Achievements -->
+    <section class="container">
+      <h2>إنجازاتنا</h2>
+      <div class="facts">
+        <div>
+          <b class="big">2024</b>
+          <h3>سنة التأسيس</h3>
+          <p>منذ انطلاقنا، نبني برمجيات وحلولاً رقمية لقطاعات متنوعة.</p>
+        </div>
+        <div>
+          <b class="big">5</b>
+          <h3>خطوط منتجات</h3>
+          <p>من ترجمة لغة الإشارة إلى إدارة المشافي، وكل منها مبني لحاجة حقيقية.</p>
+        </div>
+        <div>
+          <b class="big">AI</b>
+          <h3>الذكاء الاصطناعي</h3>
+          <p>جزء من طريقة عملنا وليس فقط مما نقدمه.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container">
+      <h2>عن سمارت لاند</h2>
+      <div class="about">
+        <p class="statement"><em>Smart </em> هو التفكير وراء كل منتج، و<em> Land </em>  هو الأساس الموثوق الذي يقوم عليه توجهنا وأنظمة عملنا..</p>
+        <div>
+          <div class="mv">
+            <h3>مهمتنا</h3>
+            <p>بناء برمجيات ذكية وموثوقة يعتمد عليها الأفراد والمؤسسات.</p>
+          </div>
+          <div class="mv">
+            <h3>رؤيتنا</h3>
+            <p>أن نكون الشريك الموثوق للمنصات الرقمية المدعومة بالذكاء الاصطناعي أينما كان عملاؤنا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: the email is the headline -->
+    <section id="contact" class="container contact">
+      <h2>تحدث إلينا</h2>
+      <p>أخبرنا بما تريد بناءه.</p>
+      <a class="mail" href="mailto:info@smartland.example">info@smartland.example</a>
+      <div class="details">
+        <p>الهاتف: <a href="tel:+963000000000" dir="ltr">+963 000 000 000</a></p>
+        <p>العنوان: سوريا, دمشق</p>
+        <p>تابعنا: <a href="#">LinkedIn</a> · <a href="#">Facebook</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 سمارت لاند</p>
+  </footer>
+
+  <!-- Each project opens only its supplied video in a fullscreen player. -->
+  <dialog id="d-signal" class="project-dialog">
+    <form method="dialog"><button class="close" aria-label="إغلاق">×</button></form>
+    <video class="project-video" controls playsinline preload="metadata"><source src="assets/video/SmartSignal.mp4" type="video/mp4"></video>
+  </dialog>
+  <dialog id="d-mykey" class="project-dialog">
+    <form method="dialog"><button class="close" aria-label="إغلاق">×</button></form>
+    <video class="project-video" controls playsinline preload="metadata"><source src="assets/video/MyKey.mp4" type="video/mp4"></video>
+  </dialog>
+  <dialog id="d-sada" class="project-dialog">
+    <form method="dialog"><button class="close" aria-label="إغلاق">×</button></form>
+    <video class="project-video" controls playsinline preload="metadata"><source src="assets/video/Sada.mp4" type="video/mp4"></video>
+  </dialog>
+  <dialog id="d-welcome" class="project-dialog">
+    <form method="dialog"><button class="close" aria-label="إغلاق">×</button></form>
+    <video class="project-video" controls playsinline preload="metadata"><source src="assets/video/Welcome.mp4" type="video/mp4"></video>
+  </dialog>
+  <dialog id="d-hospital" class="project-dialog">
+    <form method="dialog"><button class="close" aria-label="إغلاق">×</button></form>
+    <video class="project-video" controls playsinline preload="metadata"><source src="assets/video/shifaa.mp4" type="video/mp4"></video>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
